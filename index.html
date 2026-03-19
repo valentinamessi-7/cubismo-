@@ -1,57 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Cubismo</title>
-  <style>
-    /* Estilos del encabezado */
-    header {
-      background-color: #2c3e50; /* fondo */
-      padding: 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      text-align: center;
-      letter-spacing: 3px;
-      font-family: 'Arial Black', sans-serif;
-      color: #ff931e; /* color del logo/título */
-    }
-
-    nav {
-      margin-top: 15px;
-      text-align: center;
-    }
-
-    nav a {
-      color: #ffffff; /* texto en blanco */
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-family: 'Arial', sans-serif;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff931e; /* acento al pasar el mouse */
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Cubismo - Historia del Arte</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalizing.css">
 </head>
 <body>
-  <!-- Aquí va tu encabezado nuevo -->
   <header>
-    <h1>CUBISMO</h1>
-    <nav>
-      <a href="#">INICIO</a>
-      <a href="#">HISTORIA</a>
-      <a href="#">ARTISTAS</a>
-      <a href="#">OBRAS</a>
-      <a href="#">LEGADO</a>
-      <a href="#">INFLUENCIAS</a>
-      <a href="#">CONTACTO</a>
-    </nav>
-  </header>
+  <div class="navbar">
+    <div class="logo">
+      <!-- Logo ahora es un enlace al inicio -->
+      <a href="index.html">
+        <img src="/Photo/LOGO.svg" alt="Logo Cubismo">
+      </a>
+    </div>
+    <ul class="menu">
+      <!-- Menú Inicio ahora redirige al inicio -->
+      <li><a href="index.html">Inicio</a></li>
+      <li class="submenu">
+        <a href="Historia.html">Historia</a>
+        <ul class="dropdown">
+          <li><a href="OrigenEnParis.html">Orígen en Paris</a></li>
+            <li><a href="CubismoAnalitico.html">Cubismo Analitico</a></li>
+            <li><a href="CubismoSintetico.html">Cubismo Sintetico</a></li>
+            <li><a href="ContextoHistorico.html">Contexto Historico</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="Artistas.html">Artistas</a>
+        <ul class="dropdown">
+          <li><a href="Artista_PabloPicasso.html">Pablo Picasso</a></li>
+          <li><a href="Artista_GeorgesBraque.html">Georges Braque</a></li>
+          <li><a href="Artista_JuanGris.html">Juan Gris</a></li>
+          <li><a href="#">Otros</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="#Obras">Obras</a>
+        <ul class="dropdown">
+          <li><a href="#">Obras Emblematicas</a></li>
+          <li><a href="#">Obras Representativas</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="#">Legado</a>
+        <ul class="dropdown">
+          <li><a href="#">Influencia en el arte moderno</a></li>
+          <li><a href="#">Impacto en Arquitectura y diseño</a></li>
+          <li><a href="#">Escultura y Literatura</a></li>
+          <li><a href="#">Precencia en la cultura contemporanèa</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="#">Influencia</a>
+        <ul class="dropdown">
+          <li><a href="#">Relacion con la fotografia</a></li>
+          <li><a href="#">Influencia de la Primero Guerra mundial</a></li>
+        </ul>
+      </li>
+      <li><a href="#footer">Contacto</a></li>
+    </ul>
+  </div>
+</header>
 
   <!-- El resto de tu contenido -->
   <main>
