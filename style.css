@@ -1,0 +1,30 @@
+/* 1. Sacar los puntitos de las listas del nav */
+ul {
+  list-style: none;   /* elimina los puntitos */
+  padding: 0;
+  margin: 0;
+}
+
+/* 2. Dar redondez a todas las imágenes */
+img {
+  border-radius: 15px;   /* puedes ajustar el valor */
+}
+
+.header {
+  background-color: #ffcccc;
+}
+
+.main {
+  background-color: #ccffcc;
+}
+
+.footer {
+  background-color: #ccccff;
+}
+
+
+/* 4. Dar borde al div del logo */
+header nav a img {
+  border: 2px solid black;   /* borde negro alrededor del logo */
+  padding: 5px;              /* espacio interno para que se vea mejor */
+}
