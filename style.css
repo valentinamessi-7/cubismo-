@@ -13,13 +13,21 @@ img {
 }
 
 /* Header en rojo oscuro */
-header {
+h1 {
+    color: beige;
   background-color: #a41d1d;
+  font-family: 'Montserrat Alternates';
+  font-weight: 900; /* BLACK */
+
 }
 
 /* Main en verde intenso */
-main {
+h2 h3 h4 h5 {
+     color: beige;
   background-color: #1ec853;
+font-family: 'Montserrat Alternates';
+  font-weight: 400; /* normal */
+
 }
 
 /* Footer en azul fuerte */
