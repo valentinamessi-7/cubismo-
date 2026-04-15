@@ -21,8 +21,7 @@ h1 {
   font-weight: 900; /* BLACK */
 }
 
-
-h2{
+h2 {
     color: #1ec853;
     background-color: #a41d1d;
      text-decoration: underline;
@@ -30,7 +29,7 @@ h2{
     font-weight:700; /* SEMIBOLD */
 }
 
-h3{
+h3 {
     color:#ffffff;
     background-color:#ff6d00;
         text-decoration: underline;
@@ -38,13 +37,20 @@ h3{
     font-weight:600; /* LIGHT */
 }
 
-p{
+h4 {
+    color:#ff6d00;
+     text-decoration: underline;
+    font-family: 'Montserrat Alternates';
+    font-weight:500; /* MEDIUM */
+}
+
+p {
     color: #0a0a0a;
     font-family: 'Montserrat Alternates';
     font-weight:400; /* THIN */
 }
 
-body{
+body {
     background-color: #dfe6f0;
 }
 
