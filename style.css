@@ -14,8 +14,8 @@ img {
 
 /* Header en rojo oscuro */
 h1 {
-    color: beige;
-  background-color: #a41d1d;
+    color:#ffffff;
+    background-color:#ff6d00;
   text-decoration: underline;
   font-family: 'Montserrat Alternates';
   font-weight: 900; /* BLACK */
@@ -31,8 +31,8 @@ h2{
 }
 
 h3{
-    color:aliceblue;
-    background-color:ff6d00;
+    color:#ffffff;
+    background-color:#ff6d00;
         text-decoration: underline;
     font-family: 'Montserrat Alternates';
     font-weight: 500; /* LIGHT */
@@ -40,7 +40,8 @@ h3{
 
 /* Footer en azul fuerte */
 footer {
-  background-color: #1111a3;
+    color: #ffffff;
+  background-color: #1f4054;
 }
 
 /* 4. Dar borde al logo */
