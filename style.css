@@ -38,6 +38,17 @@ h3{
     font-weight: 500; /* LIGHT */
 }
 
+p{
+    color: #ffffff;
+    font-family: 'Montserrat Alternates';
+    font-weight: 300; /* THIN */
+}
+
+body{
+    background-color: #dfe6f0;
+}
+
+
 /* Footer en azul fuerte */
 footer {
     color: #ffffff;
