@@ -16,28 +16,26 @@ img {
 h1 {
     color: beige;
   background-color: #a41d1d;
-}
-
-/* Main en verde intenso */
-h2 h3 h4 h5 {
-     color: beige;
-  background-color: #1ec853;
-
-}
-
-h1, h2, h3, h4 {
   text-decoration: underline;
-  font-family: 'Montserrat Alternates';
-}
-
-h1 {
   font-family: 'Montserrat Alternates';
   font-weight: 900; /* BLACK */
 }
 
-h2, h3, h4 {
-  font-family: 'Montserrat Alternates';
-  font-weight: 400; /* normal */
+h2 { 
+    color: aquamarine
+    backgrounf-color:#1ec853;
+}
+
+
+
+
+/* Main en verde intenso */
+h2 h3 h4 h5 {
+     color: beige;
+    background-color: #1ec853;
+    text-decoration: underline;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400; /* normal */
 }
 
 /* Footer en azul fuerte */
