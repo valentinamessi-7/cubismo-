@@ -67,6 +67,12 @@ body {
   text-decoration: none;
 }
 
+nav a {
+  text-decoration: none;   /* quita el subrayado */
+  font-weight: 400;        /* normal, sin bold */
+  color:#0a0a0a;          /* texto blanco (o el color que quieras) */
+}
+
 /* Tipografía para las preguntas frecuentes */
 .faq summary {
   font-family: 'Montserrat Alternates', sans-serif;
