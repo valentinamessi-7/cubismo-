@@ -79,15 +79,14 @@ body {
 
 /* Tipografía para el footer */
 .nav-footer ul {
-  background-color: #1f4054;
+  
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 500;
 }
 
 footer {
   background-color: #1f4054;   /* azul oscuro */
-               
-
+  color: #ffffff;
 }
 
 
