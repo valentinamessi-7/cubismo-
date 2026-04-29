@@ -93,6 +93,11 @@ flex-direction: column;
 flex-wrap: wrap;
 }
 
+.main-paragraph {
+    display: flex;
+    flex-direction: column;
+}
+
 /*Tipografia preguntas frecuentes*/
 
 .faq summary {
@@ -111,7 +116,7 @@ footer {
     font-weight: 400;
 }
 
-.footer-principal {
+footer p {
     color: #dfe6f0;
 }
 
