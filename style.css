@@ -112,11 +112,6 @@ footer {
 }
 
 .footer-principal {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 1em;
-    flex-wrap: wrap;
     color: #dfe6f0;
 }
 
