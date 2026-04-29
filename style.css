@@ -63,10 +63,11 @@ p {
     gap: 20px;
     font-family: "Montserrat Alternates";
     font-weight: 500;
-     background-color: #1f4054; 
+    background-color: #1f4054; 
     width: 100%;             
     margin: 0;               
-    padding: 0;
+    padding: 1em;
+    flex-wrap: wrap;
 }
 
 .nav-header ul{
