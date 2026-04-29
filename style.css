@@ -52,6 +52,7 @@ p {
     color: #0a0a0a;
     font-weight: 400;
     column-gap: 20px;
+    margin-top: 0;
 }
 
 /*Estilos del navegador principal*/
@@ -118,25 +119,4 @@ footer p {
     color: #dfe6f0;
 }
 
-/*CELULAR*/
 
-@media (min-width: 460px){
-    /*Celular*/
-    p {
-        column-count: 1;
-    }
-}
-
-@media (min-width: 700px) {
-    /*Tablet*/
-    p {
-        column-count: 2;
-    }
-}
-
-@media (min-width: 1200px) {
-    /*Desktop*/
-    p {
-        column-count: 3;
-    }
-}
