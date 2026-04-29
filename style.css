@@ -111,6 +111,11 @@ footer {
     font-weight: 400;
 }
 
+.footer p {
+    color: white;
+    font-weight: 400;
+}
+
 /*CELULAR*/
 
 @media (min-width: 460px){
