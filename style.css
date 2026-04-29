@@ -51,7 +51,6 @@ h5 {
 p {
     color: #0a0a0a;
     font-weight: 400;
-    column-count: 1;
     column-gap: 20px;
 }
 
@@ -94,8 +93,7 @@ flex-wrap: wrap;
 }
 
 .main-paragraph {
-    display: flex;
-    flex-direction: column;
+    column-count: 2;
 }
 
 /*Tipografia preguntas frecuentes*/
