@@ -111,9 +111,13 @@ footer {
     font-weight: 400;
 }
 
-.footer p {
-    color: white;
-    font-weight: 400;
+.footer-principal {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 1em;
+    flex-wrap: wrap;
+    color: #dfe6f0;
 }
 
 /*CELULAR*/
