@@ -93,17 +93,18 @@ flex-wrap: wrap;
 
 /*Estilos de las imagenes*/
 
-.galeria{
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
+.galeria {
+  display: flex;       /* coloca las imágenes en fila */
+  flex-wrap: wrap;     /* permite que bajen si no entran */
+  gap: 10px;           /* espacio entre imágenes */
 }
 
-.galeria li{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.galeria img {
+  width: 400px;        /* ancho fijo */
+  height: 250px;       /* altura fija */
+  object-fit: cover;   /* recorta para que no se deformen */
 }
+
 
 /*Tipografia preguntas frecuentes*/
 
