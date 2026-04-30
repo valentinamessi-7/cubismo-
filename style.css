@@ -102,7 +102,6 @@ flex-wrap: wrap;
 .galeria img {
   width: 400px;        /* ancho fijo */
   height: 250px;       /* altura fija */
-  object-fit: cover;   /* recorta para que no se deformen */
 }
 
 
