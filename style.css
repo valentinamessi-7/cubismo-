@@ -91,6 +91,15 @@ flex-wrap: wrap;
     column-count: 2;
 }
 
+/*Estilos de las imagenes*/
+
+.galeria{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
 /*Tipografia preguntas frecuentes*/
 
 .faq summary {
