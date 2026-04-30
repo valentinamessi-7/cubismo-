@@ -98,6 +98,8 @@ flex-wrap: wrap;
     height: 250px;
     margin: 10px;
     border-radius: 8px;
+    display: flex;
+    
 }
 
 /*Tipografia preguntas frecuentes*/
