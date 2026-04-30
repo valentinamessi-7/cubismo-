@@ -89,6 +89,7 @@ flex-wrap: wrap;
 
 .main-paragraph {
     column-count: 2;
+    margin-top: 10px;
 }
 
 /*Estilos de las imagenes*/
