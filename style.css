@@ -96,10 +96,13 @@ flex-wrap: wrap;
 .galeria{
     width: 400px;
     height: 250px;
-    margin: 10px;
-    border-radius: 8px;
+    object-fit: cover;
+}
+
+.galeria li{
     display: flex;
-    
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 /*Tipografia preguntas frecuentes*/
