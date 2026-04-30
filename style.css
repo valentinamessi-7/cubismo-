@@ -102,6 +102,7 @@ flex-wrap: wrap;
 .galeria img {
   width: 400px;        /* ancho fijo */
   height: 400px;       /* altura fija */
+  margin: 10px;
 }
 
 
