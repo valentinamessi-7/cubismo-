@@ -129,6 +129,7 @@ flex-wrap: wrap;
 .artistas {
   display: flex;        /* activa flexbox */
   flex-wrap: wrap;      /* permite que bajen si no entran en la fila */
+  flex-direction: row;  /* organiza en filas */
   gap: 20px;            /* espacio entre cada artista */
   justify-content: center; /* centra los bloques en la página */
 }
