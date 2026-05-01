@@ -43,7 +43,7 @@ h4{
 }
 
 
-/*MAIN Y PARAGRAPH*/
+/*MAIN Y PARAGRAPH - IMAGENES DE LA MAIN*/
 
 p {
     color: #0a0a0a;
@@ -123,6 +123,27 @@ flex-wrap: wrap;
   width: 400px;        /* ancho fijo */
   height: 400px;       /* altura fija */
   margin: 10px;
+}
+
+
+/*Estilo de imagenes en la seccion de artistas*/
+
+.artistas {
+  display: flex;        /* activa flexbox */
+  flex-wrap: wrap;      /* permite que bajen si no entran en la fila */
+  gap: 8px;            /* espacio entre cada artista */
+  justify-content: center; /* centra los bloques en la página */
+}
+
+.artistas div {
+  width: 250px;         /* ancho fijo para cada bloque */
+  text-align: center;   /* centra texto e imagen */
+}
+
+.artistas img {
+  width: 100%;          /* imagen ocupa todo el ancho del bloque */
+  height: auto;         /* mantiene proporción */
+  border-radius: 10px;
 }
 
 
