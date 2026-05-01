@@ -190,28 +190,5 @@ footer p {
     color: #dfe6f0;
 }
 
-/*MEDIA QUIERIS*/
-
-
-@media (min-width: 460px){
-    /*Celular*/
-    p {
-        column-count: 1;
-    }
-}
-
-@media (min-width: 700px) {
-    /*Tablet*/
-    p {
-        column-count: 2;
-    }
-}
-
-@media (min-width: 1200px) {
-    /*Desktop*/
-    p {
-        column-count: 3;
-    }
-}
 
 
