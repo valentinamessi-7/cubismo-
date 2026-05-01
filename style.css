@@ -116,6 +116,7 @@ flex-wrap: wrap;
 .galeria {
   display: flex;       /* coloca las imágenes en fila */
   flex-wrap: wrap;     /* permite que bajen si no entran */
+  flex: row;
   gap: 10px;           /* espacio entre imágenes */
 }
 
@@ -144,6 +145,25 @@ flex-wrap: wrap;
   width: 100%;          /* imagen ocupa todo el ancho del bloque */
   height: auto;         /* mantiene proporción */
   border-radius: 10px;
+}
+
+/*SECCION DE EMILIO PETTORUTTI*/
+
+.bloque {
+  display: flex;          /* coloca imagen y texto en fila */
+  align-items: flex-start; /* alinea arriba */
+  gap: 20px;              /* espacio entre imagen y texto */
+  margin-bottom: 30px;
+}
+
+.bloque img {
+  width: 300px;           /* tamaño fijo de la imagen */
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto {
+  flex: 1;                /* el texto ocupa el resto del espacio */
 }
 
 
