@@ -154,6 +154,7 @@ flex-wrap: wrap;
   align-items: flex-start; /* alinea arriba */
   gap: 20px;              /* espacio entre imagen y texto */
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .bloque img {
@@ -164,6 +165,7 @@ flex-wrap: wrap;
 
 .texto {
   flex: 1;                /* el texto ocupa el resto del espacio */
+
 }
 
 
