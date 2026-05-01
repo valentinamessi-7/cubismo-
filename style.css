@@ -126,17 +126,16 @@ flex-wrap: wrap;
 }
 
 
-/*Estilo de imagenes en la seccion de artistas*/
-
 .artistas {
   display: flex;        /* activa flexbox */
   flex-wrap: wrap;      /* permite que bajen si no entran en la fila */
-  gap: 8px;            /* espacio entre cada artista */
+  gap: 20px;            /* espacio entre cada artista */
   justify-content: center; /* centra los bloques en la página */
 }
 
 .artistas div {
-  width: 250px;         /* ancho fijo para cada bloque */
+  flex: 1 1 250px;      /* cada bloque ocupa mínimo 250px y se adapta */
+  max-width: 300px;     /* ancho máximo */
   text-align: center;   /* centra texto e imagen */
 }
 
@@ -145,6 +144,7 @@ flex-wrap: wrap;
   height: auto;         /* mantiene proporción */
   border-radius: 10px;
 }
+
 
 
 /*Tipografia preguntas frecuentes*/
