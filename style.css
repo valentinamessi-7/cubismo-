@@ -155,24 +155,6 @@ flex-wrap: wrap;
   border-radius: 10px;
 }
 
-/*SECCION DE OBRAS*/
-.obras {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.obra {
-  width: 300px;
-  text-align: center;
-}
-.obra img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 
 /*CADA UNO DE LOS ARTISTAS*/
 
