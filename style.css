@@ -28,13 +28,13 @@ h2{
 }
 
 h3 {
-    color: #ff6d00;
+    color: #0a0a0a;
     text-decoration: underline;
     font-weight: 600;
 }
 
 h4{
-    color: red;
+    color: #0a0a0a;
     text-decoration: underline;
     font-weight: 500;
 }
@@ -154,6 +154,25 @@ flex-wrap: wrap;
   height: auto;         /* mantiene proporción */
   border-radius: 10px;
 }
+
+/*SECCION DE OBRAS*/
+.obras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.obra {
+  width: 300px;
+  text-align: center;
+}
+.obra img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 /*CADA UNO DE LOS ARTISTAS*/
 
