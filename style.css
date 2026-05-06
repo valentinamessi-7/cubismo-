@@ -12,9 +12,6 @@ ul {
     margin: 0%;
 }
 
-img {
-border-radius: 15px;
-}
 
 /*Estilos de los titulos*/
 
@@ -42,6 +39,16 @@ h4{
     font-weight: 500;
 }
 
+/*ESTILO DE LAS OPCIONES ENTRE EL PARAGRAPH Y LA SECCION DE PREGUNTAS*/
+.menu-secciones {
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  color: #0a0a0a;
+  font-weight: 400;
+}
 
 /*MAIN Y PARAGRAPH - IMAGENES DE LA MAIN*/
 
@@ -126,6 +133,7 @@ flex-wrap: wrap;
   margin: 10px;
 }
 
+/*SECCION ARTISTAS*/
 
 .artistas {
   display: flex;        /* activa flexbox */
@@ -147,7 +155,7 @@ flex-wrap: wrap;
   border-radius: 10px;
 }
 
-/*SECCION DE EMILIO PETTORUTTI*/
+/*CADA UNO DE LOS ARTISTAS*/
 
 .bloque {
   display: flex;          /* coloca imagen y texto en fila */
