@@ -114,7 +114,6 @@ flex-wrap: wrap;
 }
 
 .main-paragraph {
-    column-count: 2;
     margin-top: 10px;
 }
 
@@ -123,7 +122,6 @@ flex-wrap: wrap;
 .galeria {
   display: flex;       /* coloca las imágenes en fila */
   flex-wrap: wrap;     /* permite que bajen si no entran */
-  flex: row;
   gap: 10px;           /* espacio entre imágenes */
 }
 
@@ -136,22 +134,22 @@ flex-wrap: wrap;
 /*SECCION ARTISTAS*/
 
 .artistas {
-  display: flex;        /* activa flexbox */
-  flex-wrap: wrap;      /* permite que bajen si no entran en la fila */
-  flex-direction: row;  /* organiza en filas */
-  gap: 20px;            /* espacio entre cada artista */
-  justify-content: center; /* centra los bloques en la página */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
 }
 
 .artistas div {
-  flex: 1 1 250px;      /* cada bloque ocupa mínimo 250px y se adapta */
-  max-width: 300px;     /* ancho máximo */
-  text-align: center;   /* centra texto e imagen */
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
 }
 
 .artistas img {
-  width: 100%;          /* imagen ocupa todo el ancho del bloque */
-  height: auto;         /* mantiene proporción */
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
