@@ -197,5 +197,26 @@ footer p {
     color: #dfe6f0;
 }
 
+/* MEDIA QUERIES */
+@media (min-width: 460px) {
+    p {
+       column-count: 1;   /* siempre una sola columna */
+       color: #ffffff;    /* texto blanco para que se vea sobre fondo oscuro */
+    }
+}
+
+@media (min-width: 700px) {
+    p {
+        column-count: 2;  /* en pantallas medianas, dos columnas */
+        color: #ffffff;   /* mantenemos el color visible */
+    }
+}
+
+@media (min-width: 1200px) {
+    p {
+        column-count: 3;  /* en pantallas grandes, tres columnas */
+        color: #ffffff;   /* seguimos asegurando contraste */
+    }
+}
 
 
