@@ -175,6 +175,37 @@ flex-wrap: wrap;
 
 }
 
+/*Section - menu*/
+
+.menu-secciones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-secciones li {
+  border: 2px solid #ffb347;   /* borde naranja pastel */
+  border-radius: 8px;          /* esquinas suavemente redondeadas */
+  background-color: #fff5ec;   /* fondo muy claro para contraste */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-secciones li:hover {
+  transform: translateY(-3px); /* efecto al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.menu-secciones li a {
+  display: block;
+  padding: 12px 20px;          /* espacio interno para que se vea cuadrado */
+  text-decoration: none;
+  color: #ff6d00;              /* texto naranja pastel */
+  font-weight: 600;
+  text-align: center;
+}
+
 /*Tipografia preguntas frecuentes*/
 
 .faq summary {
