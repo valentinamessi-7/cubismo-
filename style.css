@@ -114,16 +114,18 @@ p {
 
 /* SUBMENÚ */
 .submenu {
-  display: none; /* oculto por defecto */
-  position: absolute;
-  top: 100%; /* aparece debajo del padre */
-  left: 0;
-  background-color: #001f37;
+  display: none;          /* oculto por defecto */
+  position: absolute;     /* se posiciona respecto al li padre */
+  top: 100%;              /* aparece justo debajo del enlace principal */
+  left: 50%;              /* lo coloca en el centro */
+  transform: translateX(-50%); /* corrige para que quede centrado */
+  background-color: #001f37;   /* fondo azul oscuro */
   padding: 10px;
   list-style: none;
   min-width: 200px;
   border-radius: 5px;
-  z-index: 1000; /* asegura que quede por encima */
+  z-index: 1000;          /* asegura que quede por encima */
+  text-align: left;       /* alinea los textos dentro */
 }
 
 .submenu li a {
@@ -131,6 +133,18 @@ p {
   padding: 5px 10px;
   display: block;
 }
+
+/* EFECTO HOVER: muestra el submenu */
+.menu li:hover .submenu {
+  display: block;
+}
+
+/* EFECTO HOVER EN LOS LINKS DEL SUBMENÚ */
+.submenu li a:hover {
+  background-color: #ff6d00; /* naranja al pasar el mouse */
+  border-radius: 3px;
+}
+
 
 /* EFECTO HOVER */
 
