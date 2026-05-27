@@ -116,7 +116,7 @@ p {
 .submenu {
   display: none;          /* oculto por defecto */
   position: absolute;     /* se posiciona respecto al li padre */
-  top: 100%;              /* aparece justo debajo del enlace principal */
+  top: 100%;              /* aparece debajo del enlace principal */
   left: 50%;              /* lo coloca en el centro */
   transform: translateX(-50%); /* corrige para que quede centrado */
   background-color: #001f37;   /* fondo azul oscuro */
@@ -125,7 +125,6 @@ p {
   min-width: 200px;
   border-radius: 5px;
   z-index: 1000;          /* asegura que quede por encima */
-  text-align: left;       /* alinea los textos dentro */
 }
 
 .submenu li a {
@@ -144,6 +143,7 @@ p {
   background-color: #ff6d00; /* naranja al pasar el mouse */
   border-radius: 3px;
 }
+
 
 
 /* EFECTO HOVER */
