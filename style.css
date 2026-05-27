@@ -186,7 +186,7 @@ flex-wrap: wrap;
 }
 
 .menu-secciones li {
-  border: 2px solid #ffb347;   /* borde naranja pastel */
+  border: 2px solid ff6d00;   /* borde naranja pastel */
   border-radius: 8px;          /* esquinas suavemente redondeadas */
   background-color: #fff5ec;   /* fondo muy claro para contraste */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
