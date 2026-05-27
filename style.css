@@ -100,6 +100,7 @@ nav {
 
 nav a {
   display: block;
+  padding-right: 15rem; /* espacio a la derecha para que no quede pegado al borde */
 }
 
 /* MENÚ PRINCIPAL */
