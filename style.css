@@ -98,6 +98,10 @@ nav {
   flex-wrap: wrap;
 }
 
+nav a {
+  display: block;
+}
+
 /* MENÚ PRINCIPAL */
 .menu {
   display: flex;
