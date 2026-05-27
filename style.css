@@ -116,9 +116,9 @@ p {
 .submenu {
   display: none;          /* oculto por defecto */
   position: absolute;     /* se posiciona respecto al li padre */
-  top: 100%;              /* aparece debajo del enlace principal */
-  left: 50%;              /* lo coloca en el centro */
-  transform: translateX(-50%); /* corrige para que quede centrado */
+  /* top: 100%;              /* aparece debajo del enlace principal */
+  /* left: 50%; /*distancia que tengo entre ek borde izquierdo y el texto - ir variando la distancia*/    /* lo coloca en el centro */
+  /* transform: translateX(-50%); /* corrige para que quede centrado */
   background-color: #001f37;   /* fondo azul oscuro */
   padding: 10px;
   list-style: none;
@@ -140,7 +140,7 @@ p {
 
 /* EFECTO HOVER EN LOS LINKS DEL SUBMENÚ */
 .submenu li a:hover {
-  background-color: #ff6d00; /* naranja al pasar el mouse */
+  background-color: #ff6d00;      /* naranja al pasar el mouse */
   border-radius: 3px;
 }
 
