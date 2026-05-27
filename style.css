@@ -78,7 +78,14 @@ p {
 /*Estilos del navegador principal*/
 
 /* HEADER */
-.nav-header {
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -145,12 +152,7 @@ p {
 }
 
 
-
 /* EFECTO HOVER */
-
-.menu li:hover .submenu {
-  display: block; /* aparece al pasar el mouse */
-}
 
 /* OPCIONAL: efecto hover en enlaces */
 .menu a:hover {
