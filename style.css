@@ -276,9 +276,10 @@ flex-wrap: wrap;
     font-weight: 500;
     font-size: 2em;
     text-align: center;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 5px;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+
 }
 
 
