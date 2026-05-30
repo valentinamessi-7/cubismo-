@@ -274,13 +274,15 @@ flex-wrap: wrap;
     background-color: #ff6d00;
     color: #fff5ec;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 1em;        /* más chico que 2em */
     text-align: center;
-    padding: 6px 10px;
-    margin: 10px 0;
+    width: 2cm;            /* ancho fijo de 2 cm */
+    padding: 5px;          /* altura más baja */
+    margin: 10px auto;     /* centrado horizontal */
     border-radius: 3px;
-
+    
 }
+
 
 
 /*Tipografia preguntas frecuentes*/
