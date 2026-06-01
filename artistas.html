@@ -1,175 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Cubismo</title>
-          <link rel="stylesheet" href="style.css">
-      </head>
-      <body>
-        <header>
-          <nav> 
-            <a href="index.html"> <img src="img/logocubismo.svg" alt="logo de cubismo" width="120" height="80"> </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+      <header>
+      <nav> 
+        <a href="index.html">
+          <img src="img/logocubismo.svg" alt="logo de cubismo" width="120" height="80">
+        </a>
 
-            <!-- Botón hamburguesa -->
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
+         <!-- Botón hamburguesa -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="menu">
+          <li><a href="#">Inicio</a> </li>
+
+        
+          <li><a href="#">Historia</a>
+            <ul class="submenu">
+              <li><a href="#">Origen en Paris</a></li>
+              <li><a href="#">Cubismo Analitico</a></li>
+              <li><a href="#">Cubismo Sintetico</a></li>
+              <li><a href="#">Contexto Historico</a></li>
+            </ul>
+          </li>
+        
+        
+        <li><a href="artistas.html">Artistas</a>
+            <ul class="submenu">
+              <li><a href="pablo-picasso.html">Pablo Picasso</a></li>
+              <li><a href="george-braque.html">George Braque</a></li>
+              <li><a href="juan-gris.html">Juan Gris</a></li>
+              <li><a href="emilio-pettoruti.html">Emilio Pettoruti</a></li>
+            </ul>
+        </li>
+
+        
+          <li><a href="obras.html">Obras</a></li>
+        
+        
+      
+        
+          <li><a href="#">Legado</a>
+            <ul class="submenu">
+              <li><a href="#">Influencia en el arte moderno</a></li>
+              <li><a href="#">Impacto en arquitectura y diseño</a></li>
+              <li><a href="#">Cultura y Literatura</a></li>
+              <li><a href="#">Presencia en la cultura contemporanea</a></li>
+            </ul>
+          </li>
+         
+
+        
+          <li><a href="#">Influencia</a>
+            <ul class="submenu">
+              <li><a href="#">Relacion con la fotografia</a></li>
+              <li><a href="#">Influencia en la primera guerra mundial</a></li>
+            </ul>
+          </li>
+      
+      </ul>
+    </nav>
+</header>
+ 
+ <section class="franja-naranja">
+    <h3>Artistas</h3>
+</section>
+    <main>
+      <section class="carousel-container">
+        <div class="carousel">
+          <button class="prev">&#10094;</button>
+          <div class="carousel-track">
+
+            <div class="slide active">
+                <img src="img/picasso-artistas.jpg" alt="Las señoritas de Avignon">
+
+                <div class="content">
+                    <h4>Las señoritas de Avignon (1907) – Pablo Picasso</h4>
+                    <p>
+                        Considerada la obra fundacional del Cubismo, rompe con la tradición al mostrar cinco figuras femeninas fragmentadas en planos geométricos. Picasso desafió la perspectiva clásica y se inspiró en el arte africano y primitivo, creando una composición que escandalizó a su época pero abrió el camino a una nueva forma de ver la realidad.
+                    </p>
+                </div>
             </div>
 
-            <ul class="menu">
-              <li><a href="#">Inicio</a> </li>
+            <div class="slide">
+                <img src="img/braque-artistas.jpg" alt="Hombre con guitarra">
 
-              
-              <li><a href="#">Historia</a>
-                <ul class="submenu">
-                  <li><a href="#">Origen en Paris</a></li>
-                  <li><a href="#">Cubismo Analitico</a></li>
-                  <li><a href="#">Cubismo Sintetico</a></li>
-                  <li><a href="#">Contexto Historico</a></li>
-                </ul>
-              </li>
-              
-              
-              <li><a href="artistas.html">Artistas</a>
-                  <ul class="submenu">
-                    <li><a href="pablo-picasso.html">Pablo Picasso</a></li>
-                    <li><a href="george-braque.html">George Braque</a></li>
-                    <li><a href="juan-gris.html">Juan Gris</a></li>
-                    <li><a href="emilio-pettoruti.html">Emilio Pettoruti</a></li>
-                  </ul>
-              </li>
+                <div class="content">
+                    <h4>Hombre con guitarra (1911) – Georges Braque</h4>
+                    <p>
+                        Esta obra es un ejemplo del Cubismo Analítico, donde las formas se fragmentan en planos geométricos y los colores se reducen a una paleta sobria de marrones y grises. Braque descompone la figura del músico y su instrumento en múltiples perspectivas.
+                    </p>
+                </div>
+            </div>
 
-              
-              <li><a href="obras.html">Obras</a></li>
-              
-              
-              <li><a href="#">Legado</a>
-                <ul class="submenu">
-                  <li><a href="#">Influencia en el arte moderno</a></li>
-                  <li><a href="#">Impacto en arquitectura y diseño</a></li>
-                  <li><a href="#">Cultura y Literatura</a></li>
-                  <li><a href="#">Presencia en la cultura contemporanea</a></li>
-                </ul>
-              </li>
-              
+            <div class="slide">
+                <img src="img/gris-artistas.jpg" alt="Botella y Vaso">
 
-              <li><a href="#">Influencia</a>
-                <ul class="submenu">
-                  <li><a href="#">Relacion con la fotografia</a></li>
-                  <li><a href="#">Influencia en la primera guerra mundial</a></li>
-                </ul>
-              </li>
-            
-            </ul>
-          </nav>
-        </header>
-      
-      <section class="franja-naranja">
-          <h3>Artistas</h3>
-      </section>
-  <main>
-    <!-- Carrusel para mobile/tablet -->
-    <section class="carousel-container">
-      <div class="carousel">
-        <button class="prev">&#10094;</button>
-        <div class="carousel-track">
-          <div class="slide active">
-            <a href="pablo-picasso.html">
-              <img src="img/picasso-artistas.jpg" alt="Pablo Picasso">
-              <h4>Pablo Picasso 1881 - 1973</h4>
-            </a>
-          </div>
-          <div class="slide">
-            <a href="george-braque.html">
-              <img src="img/braque-artistas.jpg" alt="Georges Braque">
-              <h4>Georges Braque 1882 - 1963</h4>
-            </a>
-          </div>
-          <div class="slide">
-            <a href="juan-gris.html">
-              <img src="img/gris-artistas.jpg" alt="Juan Gris">
-              <h4>Juan Gris 1887 - 1927</h4>
-            </a>
-          </div>
-          <div class="slide">
-            <a href="emilio-pettoruti.html">
-              <img src="img/pettorutti-artistas.jpg" alt="Emilio Pettoruti">
-              <h4>Emilio Pettoruti 1882 - 1971</h4>
-            </a>
-          </div>
+                <div class="content">
+                    <h4>Botella y Vaso (1914) – Juan Gris</h4>
+                    <p>
+                        Esta obra es un ejemplo del Cubismo Sintético, donde las formas se simplifican y se utilizan colores más vivos y decorativos. Gris transforma objetos cotidianos en composiciones geométricas claras y equilibradas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="img/obras-representativas4.jpg" alt="El Quinteto">
+
+                <div class="content">
+                    <h4>El Quinteto (1927) – Emilio Pettoruti</h4>
+                    <p>
+                        Esta obra es un ejemplo de la adaptación del Cubismo en América Latina. Pettoruti utiliza geometrías definidas y colores luminosos para representar músicos en una composición equilibrada y dinámica.
+                    </p>
+                </div>
+            </div>
         </div>
         <button class="next">&#10095;</button>
-      </div>
-    </section>
+    </div>
+</section>
+</main>
 
-    <!-- Grilla para desktop -->
-    <section class="artistas-grid">
-      <div class="artista"><a href="pablo-picasso.html"><img src="img/picasso-artistas.jpg" alt="Pablo Picasso"><h4>Pablo Picasso</h4></a></div>
-      <div class="artista"><a href="george-braque.html"><img src="img/braque-artistas.jpg" alt="Georges Braque"><h4>Georges Braque</h4></a></div>
-      <div class="artista"><a href="juan-gris.html"><img src="img/gris-artistas.jpg" alt="Juan Gris"><h4>Juan Gris</h4></a></div>
-      <div class="artista"><a href="emilio-pettoruti.html"><img src="img/obras-representativas4.jpg" alt="Emilio Pettoruti"><h4>Emilio Pettoruti</h4></a></div>
-    </section>
-  </main>
+<footer class="footer-principal">
 
-      <footer class="footer-principal">
+  <div class="footer-contenido">
 
-        <div class="footer-contenido">
+    <div class="footer-info">
+      <h3>Contacto</h3>
 
-          <div class="footer-info">
-            <h3>Contacto</h3>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">WhatsApp</a></li>
+      </ul>
 
-            <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">WhatsApp</a></li>
-            </ul>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li><a href="obras.html">Obras</a></li>
+        <li><a href="#">Legado</a></li>
+        <li><a href="#">Influencia</a></li>
+      </ul>
+    </div>
 
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="#">Historia</a></li>
-              <li><a href="artistas.html">Artistas</a></li>
-              <li><a href="obras.html">Obras</a></li>
-              <li><a href="#">Legado</a></li>
-              <li><a href="#">Influencia</a></li>
-            </ul>
-          </div>
+    <div class="footer-newsletter">
+    <h3>Newsletter</h3>
 
-          <div class="footer-newsletter">
-          <h3>Newsletter</h3>
+    <p>Recibí novedades sobre el Cubismo, artistas y obras destacadas.</p>
 
-          <p>Recibí novedades sobre el Cubismo, artistas y obras destacadas.</p>
+    <form>
+        <input
+            type="email"
+            placeholder="Ingresá tu email"
+            required
+        >
 
-          <form>
-              <input
-                  type="email"
-                  placeholder="Ingresá tu email"
-                  required
-              >
+        <button type="submit">
+            Suscribirse
+        </button>
+    </form>
+</div>
 
-              <button type="submit">
-                  Suscribirse
-              </button>
-          </form>
-      </div>
+    <div class="footer-mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.078143953481!2d-58.40597292436286!3d-34.57688922296387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb564f74f69c3%3A0xeea87be2795e86d2!2sMuseo%20de%20Arte%20Latinoamericano%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1777468086195!5m2!1ses!2sar"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
 
-          <div class="footer-mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.078143953481!2d-58.40597292436286!3d-34.57688922296387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb564f74f69c3%3A0xeea87be2795e86d2!2sMuseo%20de%20Arte%20Latinoamericano%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1777468086195!5m2!1ses!2sar"
-              allowfullscreen=""
-              loading="lazy">
-            </iframe>
-          </div>
+  </div>
 
-        </div>
+  <div class="footer-copy">
+    <p>&copy; 2026 Cubismo UB. Todos los derechos reservados - Valentina Messi.</p>
+  </div>
 
-        <div class="footer-copy">
-          <p>&copy; 2026 Cubismo UB. Todos los derechos reservados - Valentina Messi.</p>
-        </div>
-
-      </footer>
-      
-      <script src="script.js"></script>
-      </body>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
 </html>
