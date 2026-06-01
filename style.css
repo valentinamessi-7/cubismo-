@@ -167,6 +167,24 @@ nav a {
   border-radius: 5px;
 }
 
+/*Menu hamburguesa*/
+.hamburger {
+  display: none;        /* oculto por defecto */
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto; /* empuja el botón a la derecha */
+
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #ffffff;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+
 /*ESTILOS DEL MAIN*/
 
 main {
@@ -176,16 +194,27 @@ flex-direction: column;
 flex-wrap: wrap;
 }
 
+main h3 {
+    text-align: center;
+}
+
 .main-paragraph {
     margin-top: 10px;
 }
 
+.main .galeria {
+    text-align: center;
+}
+
+
 /*Estilos de las imagenes*/
 
 .galeria {
-  display: flex;       /* coloca las imágenes en fila */
-  flex-wrap: wrap;     /* permite que bajen si no entran */
-  gap: 10px;           /* espacio entre imágenes */
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .galeria img {
@@ -194,6 +223,114 @@ flex-wrap: wrap;
   margin: 10px;
 }
 
+/*SECCION OBRAS - CARRUSEL*/
+.carousel-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.carousel-container h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-track {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    align-items: center;
+    gap: 40px;
+    background: #273e52;
+    padding: 30px;
+    height: 400px;
+    width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease;
+}
+
+.slide.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide.fade-out {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.slide img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content {
+    text-align: left;
+    flex: 1;
+}
+
+.content h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff5ec;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #fff5ec;
+}
+
+.prev,
+.next {
+    border: none;
+    background: #333;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+    background: #555;
+}
+
+@media(max-width: 768px) {
+    .slide {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .content {
+        text-align: center;
+    }
+}
 /*SECCION ARTISTAS*/
 
 .artistas {
@@ -238,6 +375,9 @@ flex-wrap: wrap;
 
 }
 
+/*SECCION BRAQUE*/
+
+
 /*Section - menu*/
 
 .menu-secciones {
@@ -270,7 +410,7 @@ flex-wrap: wrap;
 }
 
 /*SECCION FRANJA NARANJA*/
-.franja-naranja {
+.franja-naranja h3{
     background-color: #ff6d00;
     color: #fff5ec;
     font-weight: 500;
@@ -279,7 +419,8 @@ flex-wrap: wrap;
     width: 100%;            /* ocupa todo el ancho */
     height: 2cm;            /* altura fija */
     line-height: 2cm;       /* centra el texto verticalmente */
-    margin: 10px 0;
+    margin: 0px;
+    margin-bottom: 10px;
     border-radius: 3px;
 }
 
@@ -299,35 +440,259 @@ flex-wrap: wrap;
 
 /*Footer - estilos*/
 
-footer {
+.footer-principal {
     background-color: #1f4054;
-    font-weight: 400;
+    color: white;
+    padding: 30px;
 }
 
-footer p {
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-info {
+    flex: 1;
+}
+
+.footer-info ul {
+    margin-bottom: 20px;
+}
+.footer-copy p 
+{
+  color: #fff5ec;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-mapa iframe {
+    width: 400px;
+    height: 250px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 15px;
+}
+
+.footer-newsletter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-right: 250px;
+}
+
+.footer-newsletter h3 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.footer-newsletter p {
     color: #dfe6f0;
+    margin: 0;
 }
 
-/* MEDIA QUERIES */
-@media (min-width: 460px) {
-    p {
-       column-count: 1;   /* siempre una sola columna */
-       color: #0a0a0a;    /* texto blanco para que se vea sobre fondo oscuro */
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-newsletter input {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.footer-newsletter button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff6d00;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-newsletter button:hover {
+    background-color: #e65c00;
+}
+
+/* ====== MÓVILES Y TABLET PEQUEÑOS ====== */
+@media (min-width: 460px) and (max-width: 699px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1f4054;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu > li {
+    width: 100%;
+  }
+
+  .menu a {
+    padding: 12px;
+    border-bottom: #001f37;
+  }
+
+  .submenu {
+    position: static;
+    background-color: #001f37;
+    padding-left: 20px;
+  }
+
+  .hamburger {
+    display: flex;   /* visible en este rango */
+  }
+
+  /* HERO SECTION */
+  .hero {
+    flex-direction: column;   /* imagen arriba, texto abajo */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero img {
+    max-width: 100%;          /* ocupa todo el ancho disponible */
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .hero-texto h1 {
+    font-size: 1.8rem;         /* tamaño más compacto */
+  }
+
+  .hero-texto p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+/* ====== TABLET MEDIANO ====== */
+@media (min-width: 700px) and (max-width: 1199px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1f4054;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu > li {
+    width: 100%;
+  }
+
+  .menu a {
+    padding: 12px;
+    border-bottom: #001f37;
+  }
+
+  .submenu {
+    position: static;
+    background-color: #001f37;
+    padding-left: 20px;
+  }
+
+  .hamburger {
+    display: flex;   /* visible en este rango */
+  }
+
+  /* HERO SECTION */
+  .hero {
+    flex-direction: row;       /* imagen y texto lado a lado */
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .hero img {
+    max-width: 350px;
+    height: auto;
+  }
+
+  .hero-texto h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-texto p {
+    font-size: 1.1rem;
+  }
+
+ .footer-contenido {
+        flex-direction: column;
     }
+
+  .footer-mapa iframe {
+        width: 100%;
+
+}
 }
 
-@media (min-width: 700px) {
-    p {
-        column-count: 2;  /* en pantallas medianas, dos columnas */
-        color: #0a0a0a;   /* mantenemos el color visible */
-    }
-}
-
+/* ====== ESCRITORIO (≥1200px) ====== */
 @media (min-width: 1200px) {
-    p {
-        column-count: 3;  /* en pantallas grandes, tres columnas */
-        color: #0a0a0a;   /* seguimos asegurando contraste */
-    }
+  .menu {
+    display: flex;      /* siempre visible en escritorio */
+    flex-direction: row;
+  }
+  
+  .menu a {
+    padding: 12px;
+    border-bottom: #001f37;
+  }
+
+  .hamburger {
+    display: none;      /* oculto en escritorio */
+  }
+
+  /* HERO SECTION */
+  .hero {
+    flex-direction: row;
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .hero img {
+    max-width: 500px;
+    height: auto;
+  }
+
+  .hero-texto h1 {
+    font-size: 3rem;
+  }
+
+  .hero-texto p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
 }
 
 
