@@ -558,6 +558,7 @@ main {
 
   main {
     padding: 2rem 5rem;
+    margin-bottom: 2rem; /* deja aire antes del footer */
   }
 
   .bloque img {
@@ -643,5 +644,24 @@ main {
     align-items: flex-start;
   }
 }
+
+/* MOBILE/TABLET: ocultar grilla y mostrar carrusel */
+@media (max-width: 1199px) {
+  .carousel-container {
+    display: block;
+  }
+  .artistas-grid {
+    display: none;
+  }
+}
+
+/* Footer siempre visible */
+.footer-principal {
+  display: block;
+  clear: both;
+  position: relative;
+  z-index: 10;
+}
+
 
 
