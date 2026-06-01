@@ -229,6 +229,18 @@ nav > a {
     width: calc(50% - 1rem);
   }
 
+  /* artistas: varias columnas */
+  .artistas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .artistas div {
+    flex: 1 1 250px;
+    max-width: 300px;
+  }
+
   /* footer: columnas */
   .footer-contenido {
     flex-direction: row;
@@ -298,7 +310,6 @@ nav > a {
 
   main {
     padding: 2rem 5rem;
-    margin-bottom: 2rem; /* deja aire antes del footer */
   }
 
   .bloque img {
@@ -312,54 +323,11 @@ nav > a {
     object-fit: cover;
   }
 
-  /* carrusel oculto en desktop */
+  /* carrusel más grande */
   .carousel-container {
-    display: none;
-  }
-
-  /* grilla artistas visible en desktop */
-  .artistas-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 2rem auto;
     max-width: 1200px;
   }
 
-  .artista {
-    flex: 1 1 250px;
-    max-width: 250px;
-    text-align: center;
-    background-color: #273e52;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
-  }
-
-  .artista:hover {
-    transform: translateY(-5px);
-  }
-
-  .artista img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-  }
-
-  .artista h4 {
-    color: #fff5ec;
-    font-size: 1.1rem;
-    margin: 0.5rem 0 0;
-  }
-
-  .artista a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  /* carrusel más grande (solo si lo usás en otra sección) */
   .slide {
     flex-direction: row;
     align-items: center;
@@ -384,25 +352,3 @@ nav > a {
     align-items: flex-start;
   }
 }
-
-/* MOBILE/TABLET: ocultar grilla y mostrar carrusel */
-@media (max-width: 1199px) {
-  .carousel-container {
-    display: block;
-  }
-  .artistas-grid {
-    display: none;
-  }
-}
-
-/* Footer siempre visible */
-.footer-principal {
-  display: block;
-  clear: both;
-  position: relative;
-  z-index: 10;
-  margin-top: 2rem; /* asegura espacio respecto al contenido */
-}
-
-
-
