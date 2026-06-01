@@ -2,33 +2,34 @@
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 
-hamburger.addEventListener("click", () => {
+if (hamburger && menu) {
+  hamburger.addEventListener("click", () => {
     menu.classList.toggle("active");
-});
+  });
+}
 
 // ===== SUBMENÚS EN MÓVIL =====
 const menuItemsWithSubmenu = document.querySelectorAll(".menu > li");
 
 menuItemsWithSubmenu.forEach(item => {
-    const link = item.querySelector("a");
-    const submenu = item.querySelector(".submenu");
+  const link = item.querySelector("a");
+  const submenu = item.querySelector(".submenu");
 
-    if (submenu) {
-        link.addEventListener("click", (e) => {
+  if (submenu && link) {
+    link.addEventListener("click", (e) => {
+      // Solo en móvil y tablet
+      if (window.innerWidth < 1200) {
+        e.preventDefault();
 
-            // Solo en móvil y tablet
-            if (window.innerWidth < 1200) {
-                e.preventDefault();
-
-                // Cierra otros submenús abiertos
-                document.querySelectorAll(".submenu.active").forEach(sub => {
-                    if (sub !== submenu) {
-                        sub.classList.remove("active");
-                    }
-                });
-
-                submenu.classList.toggle("active");
-            }
+        // Cierra otros submenús abiertos
+        document.querySelectorAll(".submenu.active").forEach(sub => {
+          if (sub !== submenu) {
+            sub.classList.remove("active");
+          }
         });
-    }
+
+        submenu.classList.toggle("active");
+      }
+    });
+  }
 });
