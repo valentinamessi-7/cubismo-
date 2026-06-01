@@ -80,6 +80,7 @@ nav {
   background-color: #1f4054;
   padding: 0.75rem 1rem;
   width: 100%;
+  position: relative;
 }
 
 /* logo */
@@ -93,8 +94,16 @@ nav > a {
 .menu {
   display: none;
   flex-direction: column;
-  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 1rem;
+  right: 1rem;
   background-color: #1f4054;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
 
 .menu.active {
@@ -103,6 +112,11 @@ nav > a {
 
 .menu > li {
   border-top: 1px solid #001f37;
+  position: relative;
+}
+
+.menu > li:first-child {
+  border-top: none;
 }
 
 .menu a {
@@ -111,23 +125,35 @@ nav > a {
   font-weight: 500;
   padding: 0.75rem 1rem;
   display: block;
+  transition: background-color 0.3s ease;
 }
 
-/* submenús - móvil: debajo del item */
+/* submenús - móvil: debajo del item con margen */
 .submenu {
   display: none;
   flex-direction: column;
   background-color: #001f37;
-  padding-left: 1.5rem;
+  padding-left: 0;
+  margin: 0;
+  position: static;
 }
 
 .submenu.active {
   display: flex;
 }
 
+.submenu li {
+  border-top: 1px solid #003a52;
+}
+
+.submenu li:first-child {
+  border-top: none;
+}
+
 .submenu li a {
   color: #ffffff;
-  padding: 0.4rem 0;
+  padding: 0.6rem 1rem 0.6rem 2rem;
+  font-size: 0.95rem;
 }
 
 /* botón hamburguesa */
@@ -136,6 +162,7 @@ nav > a {
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
+  z-index: 1001;
 }
 
 .hamburger span {
@@ -143,10 +170,16 @@ nav > a {
   width: 25px;
   background: #ffffff;
   border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 /* hover */
 .menu a:hover {
+  background-color: #ff6d00;
+  color: #ffffff;
+}
+
+.submenu a:hover {
   background-color: #ff6d00;
   color: #ffffff;
 }
@@ -161,6 +194,7 @@ main {
   flex-direction: column;
   gap: 1.5rem;
   padding: 1rem;
+  margin-top: 0.5rem;
 }
 
 /* bloque imagen + texto */
@@ -207,7 +241,7 @@ main {
 
 .menu-secciones li:hover {
   transform: translateY(-2px);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
 
 /* FAQ */
@@ -272,7 +306,7 @@ main {
   background: #273e52;
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,.15);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
   opacity: 0;
   transform: translateX(30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -454,7 +488,7 @@ main {
 .footer-copy {
   text-align: center;
   margin-top: 1.5rem;
-  border-top: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-top: 0.75rem;
 }
 
@@ -530,9 +564,13 @@ main {
   .menu {
     display: flex;
     flex-direction: row;
+    position: static;
     width: auto;
     background-color: transparent;
     margin-left: auto;
+    padding: 0;
+    margin-top: 0;
+    box-shadow: none;
   }
 
   .menu > li {
@@ -558,6 +596,8 @@ main {
     min-width: 220px;
     border-radius: 5px;
     background-color: #001f37;
+    margin: 0.5rem 0 0 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
   .menu li:hover > .submenu {
@@ -612,5 +652,3 @@ main {
     align-items: flex-start;
   }
 }
-
-
