@@ -1,35 +1,37 @@
-const slides = document.querySelectorAll(".slide");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
+// Carrusel solo en mobile/tablet
+if (window.innerWidth < 1200) {
+  const slides = document.querySelectorAll(".slide");
+  const nextBtn = document.querySelector(".next");
+  const prevBtn = document.querySelector(".prev");
 
-let current = 0;
+  let current = 0;
 
-function showSlide(index) {
+  function showSlide(index) {
     slides[current].classList.remove("active");
     current = index;
     slides[current].classList.add("active");
-}
+  }
 
-function nextSlide() {
+  function nextSlide() {
     let next = current + 1;
     if (next >= slides.length) {
-        next = 0;
+      next = 0;
     }
     showSlide(next);
-}
+  }
 
-function prevSlide() {
+  function prevSlide() {
     let prev = current - 1;
     if (prev < 0) {
-        prev = slides.length - 1;
+      prev = slides.length - 1;
     }
     showSlide(prev);
+  }
+
+  nextBtn.addEventListener("click", nextSlide);
+  prevBtn.addEventListener("click", prevSlide);
+
+  // Cambio automático cada 5 segundos
+  setInterval(nextSlide, 5000);
 }
 
-nextBtn.addEventListener("click", nextSlide);
-prevBtn.addEventListener("click", prevSlide);
-
-// Cambio automático cada 5 segundos
-setInterval(nextSlide, 5000);
-
-/**/
