@@ -354,6 +354,13 @@ main {
     cursor: pointer;
 }
 
+.slide artistas a {
+  color: #fff5ec;
+  text-decoration: underline;
+  text-decoration-color: #fff5ce;
+  font-weight: 500;
+}
+
 .content {
   text-align: left;
   width: 100%;
@@ -588,10 +595,7 @@ main {
     max-width: 300px;
   }
 
-  .artistas a {
-    color: #fff5ec;
-  }
-
+  
   /* footer: columnas */
   .footer-contenido {
     flex-direction: row;
