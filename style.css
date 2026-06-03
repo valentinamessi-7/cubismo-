@@ -588,6 +588,10 @@ main {
     max-width: 300px;
   }
 
+  .artistas a h4 {
+    color: #fff5ec;
+  }
+
   /* footer: columnas */
   .footer-contenido {
     flex-direction: row;

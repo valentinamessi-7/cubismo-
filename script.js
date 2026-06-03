@@ -6,6 +6,10 @@ hamburger.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
 
+
+
+
+
 // ===== SUBMENÚS EN MÓVIL =====
 const menuItemsWithSubmenu = document.querySelectorAll(".menu > li");
 
