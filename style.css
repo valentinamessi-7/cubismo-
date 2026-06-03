@@ -588,7 +588,7 @@ main {
     max-width: 300px;
   }
 
-  .artistas a h4 {
+  .artistas a {
     color: #fff5ec;
   }
 
